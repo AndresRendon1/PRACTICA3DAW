@@ -81,19 +81,34 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            position: sticky;
             bottom: 0;
             width: 100%;
+            z-index: 1;
         }
+        .video-container {
+                    position: relative;
+                    width: 100%;
+                    padding-bottom: 56.25%; /* Proporción 16:9 */
+                    margin-top: 20px;
+                }
+        .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
     </style>
 </head>
 <body>
     <header>
         <h1>Caño Cristales</h1>
-        <img src="https://nevadoycafe.com.co/wp-content/uploads/2023/05/cano-cristales-1.jpg" width="200" height="121" alt="Destino 3">
+        <img src="https://nevadoycafe.com.co/wp-content/uploads/2023/05/cano-cristales-1.jpg" width="100%" height="121" alt="Destino 3">
     </header>
     <nav>
         <ul>
+            <li><a href="index2.html">Inicio</a></li>
             <li><a href="#Descripcion">Descripción</a></li>
             <li><a href="#Atractivos">Atractivos</a></li>
             <li><a href="#Itinerario">Itinerario</a></li>
@@ -112,11 +127,15 @@
         <ul>
             <li>
                 <h3>Rio Caño Cristales</h3>
-                <img src="https://exytures.com.co/wp-content/uploads/2023/07/iStock-1201456158-1290x540.jpg" width="200" height="121" alt="Atractivo 1">
-            </li>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-GJHFNXFH64" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
             <li>
-                <h3>Sierra La Macarena</h3>
-                <img src="https://www.socialhizo.com/images/turismo-al-dia/parques-nacionales/macarena/cano-cristales.jpg" width="200" height="121" alt="Atractivo 2">
+                <h3>Cascada Que LLueve Para Arriba</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mm9JW1xLBIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>                                
             </li>
             
         </ul>

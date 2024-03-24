@@ -81,25 +81,42 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            position: sticky;
             bottom: 0;
             width: 100%;
+            z-index: 1;
         }
+        .video-container {
+                    position: relative;
+                    width: 100%;
+                    padding-bottom: 56.25%; /* Proporción 16:9 */
+                    margin-top: 20px;
+                }
+        .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
     </style>
 </head>
 <body>
     <header>
         <h1>Guatape</h1>
-        <img src="https://cdn.yate.co/img/blog/2023/13/guatape-negx640.jpg" width="200" height="121" alt="Destino 1">
+        <img src="https://raw.githubusercontent.com/JhamG9/api-viaja/main/uploads/guatape/piedra-guatape.webp" width="100%" height="121" alt="Destino 1">
     </header>
+    
     <nav>
         <ul>
+            <li><a href="index2.html">Inicio</a></li>
             <li><a href="#Descripcion">Descripción</a></li>
             <li><a href="#Atractivos">Atractivos</a></li>
             <li><a href="#Itinerario">Itinerario</a></li>
             <li><a href="#Costos">Costos</a></li>
         </ul>
     </nav>
+    
     <section id="Descripcion">
         <h2>Descripción</h2>
         <p>Guatapé es un municipio turístico de los Andes al noroeste de Colombia y al este de Medellín. 
@@ -111,17 +128,26 @@
     <section id="Atractivos">
         <h2>Atractivos</h2>
         <ul>
-            <li>
-                <h3>Peñon De Guatape</h3>
-                <img src="https://raw.githubusercontent.com/JhamG9/api-viaja/main/uploads/guatape/piedra-guatape.webp" width="200" height="121" alt="Atractivo 1">
-            </li>
-            <li>
-                <h3>Malecon De Guatape</h3>
-                <img src="https://medellinturistico.com/wp-content/uploads/2019/09/Nuevo-malecon-Guatape-2-980x400.jpeg" width="200" height="121" alt="Atractivo 2">
-            </li>
-
+            <section id="Atractivos">
+                <h2>Atractivos</h2>
+                <ul>
+                    <li>
+                        <h3>Peñon De Guatape</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/u6HtNoqqc9Y?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Malecon De Guatape</h3>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/GJHUaQt_eCQ?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </li>                    
+                </ul>
+            </section>            
         </ul>
     </section>
+    
     <section id="Itinerario">
         <h2>Itinerario</h2>
         <p>Itinerario de ejemplo para 5 días y 4 noches en el destino.</p>

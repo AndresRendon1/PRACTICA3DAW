@@ -58,6 +58,19 @@
 
         p {
             line-height: 1.6;
+            max-height: 3.2em; /* 2 líneas a 1.6em de línea */
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .read-more {
+            display: none;
+        }
+
+        .show-more {
+            display: inline-block;
+            color: blue;
+            cursor: pointer;
         }
 
         ul {
@@ -81,39 +94,62 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
+            position: sticky;
             bottom: 0;
             width: 100%;
+            z-index: 1;
         }
+        .video-container {
+                    position: relative;
+                    width: 100%;
+                    padding-bottom: 56.25%; /* Proporción 16:9 */
+                    margin-top: 20px;
+                }
+        .video-container iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
     </style>
 </head>
 <body>
     <header>
         <h1>Venecia</h1>
-        <img src="https://tourismmedia.italia.it/is/image/mitur/1600X900_venezia_san_marco_gabbiano-2?wid=1600&hei=900&fit=constrain,1&fmt=webp" width="200" height="121" alt="Destino 6">
+        <img src="https://tourismmedia.italia.it/is/image/mitur/1600X900_venezia_san_marco_gabbiano-2?wid=1600&hei=900&fit=constrain,1&fmt=webp" width="100%" height="121" alt="Destino 6">
     </header>
     <nav>
-        <ul>
-            <li><a href="#Decripcion">Descripcion</a></li>
-            <li><a href="#Atractivos">Atractivos</a></li>
-            <li><a href="#Itinerario">Itinerario</a></li>
-            <li><a href="#Costos">Destinos</a></li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="index2.html">Inicio</a></li>
+                <li><a href="#Descripcion">Descripción</a></li>
+                <li><a href="#Atractivos">Atractivos</a></li>
+                <li><a href="#Itinerario">Itinerario</a></li>
+                <li><a href="#Costos">Costos</a></li>
+            </ul>
+        </nav>        
     </nav>
     <section id="Descripcion">
         <h2>Descripción</h2>
-        <p>Venecia, la capital de la región de Véneto en el norte de Italia, abarca más de 100 islas pequeñas en una laguna del mar Adriático. No tiene caminos, sino solo canales, incluida la vía pública del Gran Canal, bordeada de palacios renacentistas y góticos. En la plaza central de San Marcos, se encuentra la basílica de San Marcos, que tiene un suelo de mosaicos bizantinos, y el campanario Campanile con vista a los techos rojos de la ciudad.</p>
+        <p>Venecia, la capital de la región de Véneto en el norte de Italia, abarca más de 100 islas pequeñas en una laguna del mar Adriático. No tiene caminos, sino solo canales, incluida la vía pública del Gran Canal, bordeada de palacios renacentistas y góticos. En la plaza central de San Marcos, se encuentra la basílica de San Marcos, que tiene un suelo de mosaicos bizantinos, y el campanario Campanile con vista a los techos rojos de la ciudad. Venecia, la capital de la región de Véneto en el norte de Italia, abarca más de 100 islas pequeñas en una laguna del mar Adriático. No tiene caminos, sino solo canales, incluida la vía pública del Gran Canal, bordeada de palacios renacentistas y góticos. En la plaza central de San Marcos, se encuentra la basílica de San Marcos, que tiene un suelo de mosaicos bizantinos, y el campanario Campanile con vista a los techos rojos de la ciudad.</p>
+        <p class="read-more">Venecia, la capital de la región de Véneto en el norte de Italia, abarca más de 100 islas pequeñas en una laguna del mar Adriático. No tiene caminos, sino solo canales, incluida la vía pública del Gran Canal, bordeada de palacios renacentistas y góticos. En la plaza central de San Marcos, se encuentra la basílica de San Marcos, que tiene un suelo de mosaicos bizantinos, y el campanario Campanile con vista a los techos rojos de la ciudad.</p>
+        <p class="show-more" onclick="showMore('Descripcion')">Ver más</p>
     </section>
     <section id="Atractivos">
         <h2>Atractivos</h2>
         <ul>
             <li>
                 <h3>Canales De Venecia</h3>
-                <img src="https://images.ecestaticos.com/nnpHSbgjGcT1gN1oFV20MtTQRSY=/0x0:2124x1411/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F258%2F965%2F0b5%2F2589650b5fdad5e0d42cf3cb71a619bf.jpg" width="200" height="121" alt="Atractivo 1">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4Lv4coUSVkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;"></iframe>
+                </div>                
             </li>
             <li>
-                <h3>Acqua Alta Venecia</h3>
-                <img src="https://www.elindependiente.com/wp-content/uploads/2021/08/venecia-turismo-masivo-656x368.jpg.webp" width="200" height="121" alt="Atractivo 2">
+                <h3>Plaza De San Marcos Venecia</h3>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UzQL5or5mxw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>                               
             </li>
 
         </ul>
