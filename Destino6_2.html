@@ -58,19 +58,6 @@
 
         p {
             line-height: 1.6;
-            max-height: 3.2em; /* 2 líneas a 1.6em de línea */
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .read-more {
-            display: none;
-        }
-
-        .show-more {
-            display: inline-block;
-            color: blue;
-            cursor: pointer;
         }
 
         ul {
@@ -132,9 +119,7 @@
     </nav>
     <section id="Descripcion">
         <h2>Descripción</h2>
-        <p>Venecia, la capital de la región de Véneto en el norte de Italia, abarca más de 100 islas pequeñas en una laguna del mar Adriático. No tiene caminos, sino solo canales, incluida la vía pública del Gran Canal, bordeada de palacios renacentistas y góticos. En la plaza central de San Marcos, se encuentra la basílica de San Marcos, que tiene un suelo de mosaicos bizantinos, y el campanario Campanile con vista a los techos rojos de la ciudad. Venecia, la capital de la región de Véneto en el norte de Italia, abarca más de 100 islas pequeñas en una laguna del mar Adriático. No tiene caminos, sino solo canales, incluida la vía pública del Gran Canal, bordeada de palacios renacentistas y góticos. En la plaza central de San Marcos, se encuentra la basílica de San Marcos, que tiene un suelo de mosaicos bizantinos, y el campanario Campanile con vista a los techos rojos de la ciudad.</p>
-        <p class="read-more">Venecia, la capital de la región de Véneto en el norte de Italia, abarca más de 100 islas pequeñas en una laguna del mar Adriático. No tiene caminos, sino solo canales, incluida la vía pública del Gran Canal, bordeada de palacios renacentistas y góticos. En la plaza central de San Marcos, se encuentra la basílica de San Marcos, que tiene un suelo de mosaicos bizantinos, y el campanario Campanile con vista a los techos rojos de la ciudad.</p>
-        <p class="show-more" onclick="showMore('Descripcion')">Ver más</p>
+        <p>Venecia, la capital de la región de Véneto en el norte de Italia, abarca más de 100 islas pequeñas en una laguna del mar Adriático. No tiene caminos, sino solo canales, incluida la vía pública del Gran Canal, bordeada de palacios renacentistas y góticos. En la plaza central de San Marcos, se encuentra la basílica de San Marcos, que tiene un suelo de mosaicos bizantinos, y el campanario Campanile con vista a los techos rojos de la ciudad.</p>
     </section>
     <section id="Atractivos">
         <h2>Atractivos</h2>
@@ -142,14 +127,15 @@
             <li>
                 <h3>Canales De Venecia</h3>
                 <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4Lv4coUSVkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4Lv4coUSVkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>                
             </li>
             <li>
                 <h3>Plaza De San Marcos Venecia</h3>
                 <div class="video-container">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/UzQL5or5mxw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>                               
+                </div>
+                               
             </li>
 
         </ul>
@@ -177,8 +163,33 @@
     </section>
     <section id="Costos">
         <h2>Costos</h2>
-        <p>Costos de viaje, traslados, hospedajes, entradas a sitios turísticos, alimentacion : 12.000.000 COP.</p>
+        <p>Costos de viaje, traslados, hospedajes, entradas a sitios turísticos, alimentación:</p>
+        <ul>
+            <li>
+                <h3>Hotel</h3>
+                <p>Domus Ciliota, ubicación: Calle delle Muneghe 2976, San Marco, San Marco. Venecia, Italia , costo por noche: 408.580 COP.</p>
+            </li>
+            <li>
+                <h3>Comidas Típicas</h3>
+                <p>Sarde in Saor, Restaurante: Al vecio Forno.</p>
+                <p>Risotto al nero di seppia, Restaurante: Al vecio Forno.</p>
+                <p>Fegato alla Venezia, Restaurante: Al vecio Forno.</p>
+            </li>
+            <li>
+                <h3>Sitios Turísticos</h3>
+                <p>Viaje en gondola, costo : 160 EUR , Duracion: 1 Hora.</p>
+                <p>Palacio Ducal, costo : 71 EUR , Duracion: 2-3 Horas.</p>
+                <p>Campanario San Marcos, costo : 15 EUR , Duracion: 2 Horas.</p>
+                <p>Bellas artes, costo : 17 EUR , Duracion: N/A.</p>
+            </li>
+            <li>
+                <h3>Transporte</h3>
+                <p>Transporte para los 5 dias, coste aproximado 800.000 COP</p>
+            </li>
+        </ul>
+        <p>Total estimado: 12.000.000 COP.</p>
     </section>
+    
     <footer>
         <p>Desarrollado por: [Andrés Felipe Rendón Villada]</p>
         <p>Contacto: [andres.rendonv@udea.edu.co]</p>
